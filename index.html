@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panda E-commerce</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header id="home" class="container ">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
                   <img src="images/logo.png" alt="">
@@ -19,23 +20,27 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  <a class="nav-link" href="#">Home</a>
-                  <a class="nav-link" href="#">Product</a>
-                  <a class="nav-link" href="#">Subscribe</a>
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>                  <a class="nav-link" href="#shoes">Shoes</a>
+                  <a class="nav-link" href="#backpack">Backpack</a>
+                  <a class="nav-link" href="#subscribe">Subscribe</a>
                 </div>
               </div>
             </div>
           </nav>
           <section class="carousel mt-5">
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselExampleControls" class="carousel slide panda-slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="row">
+                        <div class="row d-flex align-items-center p-5">
                             <div class="col-md-7">
                                 <h1>Mi LED TV 4A PRO 32</h1>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam omnis illo voluptatibus assumenda! Id, quae corrupti quis reprehenderit ipsum qui.</p>
-                                <h1>$1289</h1>
+                                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor 
+                                    do amet sint. Velit officia consequat duis enim velit mollit. 
+                                    Exercitation veniam consequat sunt nostrud amet</p>
+                                <h1>$1500</h1>
+                                <button class="btn btn-warning">
+                                    BUY NOW
+                                </button>
                                 
 
                             </div>
@@ -46,11 +51,15 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="row">
+                        <div class="row d-flex align-items-center p-5">
                             <div class="col-md-7">
                                 <h1>Mi LED TV 4A PRO 32</h1>
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam omnis illo voluptatibus assumenda! Id, quae corrupti quis reprehenderit ipsum qui.</p>
                                 <h1>$1289</h1>
+                                <button class="btn btn-warning">
+                                  BUY NOW
+                                </button>
+                              
                                 
 
                             </div>
@@ -60,11 +69,15 @@
                             </div>
                         </div>                    </div>
                     <div class="carousel-item">
-                        <div class="row">
+                        <div class="row d-flex align-items-center p-5">
                             <div class="col-md-7">
                                 <h1>Mi LED TV 4A PRO 32</h1>
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam omnis illo voluptatibus assumenda! Id, quae corrupti quis reprehenderit ipsum qui.</p>
-                                <h1>$1289</h1>
+                                <h1>$600</h1>
+                                <button class="btn btn-warning">
+                                  BUY NOW
+                                </button>
+                              
                                 
 
                             </div>
@@ -86,9 +99,9 @@
           </section>
     </header>
 
-    <main>
-        <section class="container overflow-hidden">
-            <div class="row gx-5 mt-5">
+    <main class="container">
+      <section class="container overflow-hidden categories ">
+            <div class="row g-5 mt-5">
                 <h1>Categories</h1>
                     <div class="col">
                         <div class="p-3 rounded bg-warning d-flex align-items-center justify-content-around">
@@ -110,7 +123,126 @@
                     </div>
             </div>
         </section>
+
+        <section id="shoes" class="Shoes mt-5 ">
+            <h1>Shoes</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card panda-card h-100 shadow">
+                    <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Reebok Dart Men's Shoes</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste veniam aliquid quo necessitatibus itaque animi aut quaerat dolore esse impedit!
+                      </p>
+                      <p>$500</p>
+                    </div>
+                    <div class="card-footer panda-card-footer">
+                      <button class="btn btn-warning">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card panda-card h-100  shadow">
+                      <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Reebok Dart Men's Shoes</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste veniam aliquid quo necessitatibus itaque animi aut quaerat dolore esse impedit!
+                        </p>
+                        <p>$500</p>
+                      </div>
+                      <div class="card-footer panda-card-footer">
+                        <button class="btn btn-warning">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card panda-card h-100  shadow">
+                      <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Reebok Dart Men's Shoes</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste veniam aliquid quo necessitatibus itaque animi aut quaerat dolore esse impedit!
+                        </p>
+                        <p>$500</p>
+                      </div>
+                      <div class="card-footer panda-card-footer">
+                        <button class="btn btn-warning">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+
+        </section>
+
+
+        <section id="backpack" class="Backpack mt-5">
+            <h1>Backpack</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card panda-card h-100  shadow">
+                    <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                       
+                      <h5 class="card-title">Reebok Dart Men's Shoes</h5>
+                      <p>$500</p>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste veniam aliquid quo necessitatibus itaque animi aut quaerat dolore esse impedit!
+                      </p>
+                     
+                    </div>
+                    <div class="card-footer panda-card-footer">
+                      <button class="btn btn-warning">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card panda-card h-100  shadow">
+                      <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        
+                        <h5 class="card-title">Reebok Dart Men's Shoes</h5>
+                        <p>$500</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste veniam aliquid quo necessitatibus itaque animi aut quaerat dolore esse impedit!
+                        </p>
+                        
+                      </div>
+                      <div class="card-footer panda-card-footer">
+                        <button class="btn btn-warning">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card panda-card h-100  shadow">
+                      <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        
+                        <h5 class="card-title">Reebok Dart Men's Shoes</h5>
+                        <p>$500</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste veniam aliquid quo necessitatibus itaque animi aut quaerat dolore esse impedit!
+                        </p>
+                        
+                      </div>
+                      <div class="card-footer panda-card-footer">
+                        <button class="btn btn-warning">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+
+
+        </section>
+
+        <section id="subscribe" style="height: 300px;" class="subscribe mt-5 rounded-3 bg-info d-flex align-items-center justify-content-center">
+            <div class=" ">
+                <h1>LET'S STAY IN TOUCH</h1>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, sed.</P>
+                <input type="text"placeholder="Enter Your Email address">
+                <button class="btn btn-warning">SUBMIT</button>
+
+            </div>
+
+        </section>
     </main>
+
+    <footer class="text-center mt-5" >
+        <small >@2022. Panda E-Commerce . All Rights Reserve </small>
+    </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
